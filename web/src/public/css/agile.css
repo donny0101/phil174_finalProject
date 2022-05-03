@@ -1,0 +1,40 @@
+.first{
+    font-size: 3rem;
+    border: 6px solid #3f2b7a;
+    margin:2rem;
+    padding: 2rem;
+}
+
+.second {
+    font-size: 2rem;
+    border: 4px solid red;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.third {
+    font-size: 1rem;
+    border: 3px solid blue;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+.fourth{
+    font-size: 3rem;
+    margin: 3rem;
+    border: 3px;
+     
+}
+
+.carProtectTitle{
+    font-size: 6rem ;
+    margin: 1rem; 
+    border: 3px salmon;
+}
+
+.fifth{
+    margin:3rem;
+    border:2px;
+}
+
+
