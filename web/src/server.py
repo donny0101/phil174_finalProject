@@ -13,6 +13,8 @@ def product_page(req):
 
 def KVP_page(req):
     return FileResponse("./templates/KVP.html")
+def IA5_page(req):
+    return FileResponse("./templates/IA5.html")
 
 if __name__ == '__main__':
     with Configurator() as config:
@@ -29,6 +31,12 @@ if __name__ == '__main__':
         config.add_route('KVP','/')
 
         config.add_view(KVP_page,route_name='KVP')
+
+        config.add_route('IA5','/')
+
+        config.add_view(IA5_page,route_name='IA5')
+
+        
 
 
         config.add_static_view(name='/',path='./public', cache_max_age=3600)
