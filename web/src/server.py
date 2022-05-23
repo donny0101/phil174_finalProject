@@ -17,6 +17,8 @@ def IA5_page(req):
     return FileResponse("./templates/IA5.html")
 def IA6_page(req):
     return FileResponse("./templates/IA6.html")
+def IA7_page(req):
+    return FileResponse("./templates/IA7.html")
 
 if __name__ == '__main__':
     with Configurator() as config:
@@ -41,6 +43,10 @@ if __name__ == '__main__':
         config.add_route('IA6','/')
 
         config.add_view(IA6_page,route_name='IA6')
+
+        config.add_route('IA7','/')
+
+        config.add_view(IA7_page,route_name='IA7')
 
 
         
