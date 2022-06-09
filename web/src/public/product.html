@@ -24,9 +24,11 @@
             }
         </style>
     </head>
-    <body style="background-color: cornflowerblue;">
+    <body style="background-color: cornflowerblue">
        
         <header class="fourth">Data Collection</header>
+
+        <img src="Phil174_STOPkids.jpeg">
 
         <h1>explains the goal of your data science effort (i.e., what is the real-world problem that your effort would 
             hopefully help to address)
@@ -35,30 +37,63 @@
             The Dutch government wanted to more efficiently analyze people applying for child care benefits through an 
             machine learning algorithm that assessed applicants based on  “risk indicators” that ended up punishing some 
             families even if they had a false fraud allegation. This forced many families to give up their children to foster 
-            care as the algorithm wrongly classified these applicants as risky.  
+            care as the algorithm wrongly classified these applicants as risky. The goal of the Dutch government when they 
+            first implemented this model to assess risk profiles was actually a good one: the learning algorithm would in 
+            theory more efficiently detect fradulent individuals which would eliminate those taking advantage of these benefits
+            and provide more resources for those that actually need it.  
 
         </div>
 
         <h2>outlines a proposed data collection and measurement system for this effort</h2>
-        <div>I will still have to do further research about the exact collection efforts that were used in the designing of 
-            the algorithm, but from my initial findings it looks like tax authority reports caused the error bias to occur. 
+
+        <div>
+            The data used by the model was the data given by the individual when they first signed up for the childcare benefits
+            program through the Dutch Tax Authorities. This data included things like race, income, nationality, gender, 
+            family size, and other important data for assessing taxes and determining eligibility for childcare benefits. Using 
+            this data, the model then predicted a risk score indicator to detect fraud early and thus discontinue the benefits to 
+            the individual (Politico). These individuals with high risk scores were then put on a secret list, unable to figure out
+            why they were on it and being forced by the Dutch Government to pay back the benefits they had received from the program.
         </div>
 
         <h1>
             identifies at least two significant ethical and/or societal concerns about this collection & measurement system
         </h1>
         <div>
-            One reason why the Dutch algorithm failed was miscommunication between the programming team and officials that used 
-            the system. The system accidentally emphasized some parts of the applicant's profile as riskier than necessary, 
-            causing unnecessary pain for the families involved.
+           Furthur investifgation into the model shows even more horrifying revealations. Indicators that led one to get onto the list
+           included being of "non-Western appearance," causing minorites to disproportionately be put onto the blacklist thus
+           increasing their risk scores and getting dropped from the child benefits program and forced to pay back the governement
+           with money they most likely don't have if they were part of the program to begin with. These individuals, primarily 
+           mothers trying to care for their families, relied on these benefits to help them provide for their kids. Without the 
+           benefits, and in fact actually have to pay back the governement what they were previously receiving, was too much for 
+           many which is what led to so many children being given up to foster care. Families had nowhere else to turn to and the 
+           only option they saw left was foster care. It is wrong to put individuals on a list simply because of their race or 
+           nationality, the exact reason why many of these mothers were denied benefits and received their high risk scores from 
+           the algorithm in the first place. 
+
+           I also can't believe that even when an individual was forced to pay back the benefits to the government, they couldn't
+           find out why there had suddenly been denied or forced to repay. Without knowledge of what they did wrong, how can one ever
+           hope to lower their score? The failing of the Dutch Government to provide this to individuals is in part because there was  
+           a complete lack of oversight in the how the model was perforiming on this real data due to the clear bias that existed 
+           in the implementation used in the algorithm. 
         </div>
         <h2>
             provides responses to those concerns
         </h2>
         <div>
-            The miscommunication problems seen in the Dutch childcare scandal aren’t unique. Whenever machine learning 
-            techniques are applied to real-world situations, the data that is put into the system may still create a bias as 
-            the system is working to solve one issue but may exaggerate current problems inherent in the system.
+            It is really sad to see that this was some of the "magic" used by the model to determine if an applicant turned out to
+            be fradulently receiving benefits. A team should have been in place to accurately assess if the model was correctly getting
+            rid of fraudulent benefactors or looking into the kinds of profiles that were getting flagged with high risk scores and
+            eventually ending up on the blacklist.
+        </div>
+
+        <h4>
+            Works Cited:
+        </h4>
+
+        <div>
+            Heikkilä, Melissa. “Dutch Scandal Serves as a Warning for Europe over Risks of Using Algorithms.” 
+            POLITICO, POLITICO, 13 Apr. 2022,
+             https://www.politico.eu/article/dutch-scandal-serves-as-a-warning-for-europe-over-risks-of-using-algorithms/. 
         </div>
 
         <div id="firstdiv">
@@ -66,6 +101,9 @@
         </div>
         <div id="firstdiv">
             <a href="/IA5.html">DATA USE PAGE </a> 
+        </div>
+        <div id="firstdiv">
+            <a href="/IA6.html">FUTURE ENGINEERS </a> 
         </div>
         <div id="firstdiv">
             <a href="/">HOME PAGE </a> 
