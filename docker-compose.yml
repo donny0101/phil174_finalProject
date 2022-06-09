@@ -12,4 +12,4 @@ services:
     volumes:
       - ./web/src:/app
 
-    container_name: test1
+    container_name: phil_174
