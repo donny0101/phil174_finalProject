@@ -2,7 +2,7 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>ECE 140b Individual Assignment 1</title>
+        <title>Data Analysis Page</title>
 
         <link rel="stylesheet" type="text/css" href="css/agile.css">
         <style>
@@ -29,15 +29,18 @@
             nationality, and other factors as risky causing some individuals to receive an extremely high risk score and 
             thus denied childcare benefits. This caused many families much pain, some having to give up their children to 
             foster care and others even committing suicide. It is scary to see how a program meant to catch child care benefits
-             fraud actually ended up destroying many of the families that the program was made to help. Discriminating based 
-             on race is morally wrong in itself, as minorites would disproportionately be denied more than others for 
-             childcare benefits. Flagging low income is also surprising as the individuals that are most likely applying for 
-             these programs need the help the most to support their families. Denying these individuals caused many to have to 
-             give up their children since they could no longer provide for them and saw foster care as the best option since 
-             their government has decided to tax them an insane amount instead. 
+            fraud actually ended up destroying many of the families that the program was made to help. Discriminating based 
+            on race is morally wrong in itself, as minorites would disproportionately be denied more than others for 
+            childcare benefits. Flagging low income is also surprising as the individuals that are most likely applying for 
+            these programs need the help the most to support their families. Denying these individuals caused many to have to 
+            give up their children since they could no longer provide for them and saw foster care as the best option since 
+            their government has decided to tax them an insane amount instead because they were now flagged as a fradulent 
+            benefactor. 
 
              This is all a result of the model lacking any kind of officiating whatsoever. There should have been a team in
-             place to monitor how the data was performing on the actual data once the model was in place. 
+             place to monitor how the data was performing on the actual data once the model was in place. Without any kind 
+             of human monitoring of the model, the algorithm was free to process data as it had been originally implemented 
+             with no updates despite clear problems in how risk scores were calculated for certain groups. 
         </div>
 
         <h2>
@@ -46,10 +49,12 @@
 
         <div>
             Knowing what we know now from the Dutch Algorithm scandal, I think it is clear that there needs to be some sort of
-             updating in place. In reviewing the model the Dutch government used to create the risk profiles, it was discovered
-              that there were no “checks or balances” in place to monitor the algorithm and how it was performing on the data
-               over time. A system will never be perfect, especially one that deals with people’s lives, so it is important to 
-               constantly monitor and update the software based on how the model performs. 
+            updating in place. In reviewing the model the Dutch government used to create the risk profiles, it was discovered
+            that there were no “checks or balances” in place to monitor the algorithm and how it was performing on the data
+            over time. A system will never be perfect, especially one that deals with people’s lives, so it is important to 
+            constantly monitor and update the software based on how the model performs. In this instance, the algorithm had clearly
+            bias information when it was initially implemented and as such the parts of the model that more heavily weight race and 
+            nationality should either be completely removed or drastically decreased. 
         </div>
 
         <div id="firstdiv">
