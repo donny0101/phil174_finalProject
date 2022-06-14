@@ -24,6 +24,7 @@
         </h1>
 
         <div>
+            <p>
             There are a lot of ethical concerns about how the learning algorithm the Dutch government used to create risk 
             profiles for individuals trying to receive child care benefits. The algorithm seemed to flag race, income, 
             nationality, and other factors as risky causing some individuals to receive an extremely high risk score and 
@@ -36,11 +37,17 @@
             give up their children since they could no longer provide for them and saw foster care as the best option since 
             their government has decided to tax them an insane amount instead because they were now flagged as a fradulent 
             benefactor. 
-
+            </p>
+            <p>
              This is all a result of the model lacking any kind of officiating whatsoever. There should have been a team in
              place to monitor how the data was performing on the actual data once the model was in place. Without any kind 
              of human monitoring of the model, the algorithm was free to process data as it had been originally implemented 
-             with no updates despite clear problems in how risk scores were calculated for certain groups. 
+             with no updates despite clear problems in how risk scores were calculated for certain groups. Whenever a machine 
+             learning model is used, we cannot yet completely trust compueters to make the "correct" decision everytime. The model 
+             itself was performing "correctly" based on how it was implemented, but in solving the Dutch government's goal of detecting
+             fradulent accounts failed completely becuase of the inherit biases that existed in the algorithm and were never updated or
+             removed once the model was used on the real data, creating this terrible scandal in the first place. 
+            </p>
         </div>
 
         <h2>
@@ -48,13 +55,38 @@
         </h2>
 
         <div>
+            <p>
             Knowing what we know now from the Dutch Algorithm scandal, I think it is clear that there needs to be some sort of
             updating in place. In reviewing the model the Dutch government used to create the risk profiles, it was discovered
             that there were no “checks or balances” in place to monitor the algorithm and how it was performing on the data
             over time. A system will never be perfect, especially one that deals with people’s lives, so it is important to 
             constantly monitor and update the software based on how the model performs. In this instance, the algorithm had clearly
-            bias information when it was initially implemented and as such the parts of the model that more heavily weight race and 
-            nationality should either be completely removed or drastically decreased. 
+            bias information when it was initially implemented and as such the parts of the model that more heavily weighted race and 
+            nationality should either be completely removed or drastically decreased when determining a final risk score. Currently, the 
+            way the current model is implemented is the source of much of the paint that the algorithm has caused for many individuals
+            because of this bias in how profiles were being evaluated. With a monitoring team in place, the model could have looked into 
+            what "kinds" of factors led one to get flagged as fradulent by the system or placed on the blacklist. If this had been done, 
+            the broken algorithm could have been detected quicker for unethical predicting methodology and brought this concern up to the
+            Dutch Tax Authorities or another authority invovled to stop using the model until this bias could be corrected. 
+            </p>
+            <p>
+            As we have seen, without any kind of oversight team in place disaster is left to occur as seen from this scandal. We 
+            unfortunatenly are not yet at the point where we can completely trust technology to work "as intended" and as such 
+            whenever a predictive model or algorithm is used a human-oversight team should be in place to make sure that the 
+            technology is acutally accomplishing the goal it aims to serve. With a proper team in place, multiple measures could have 
+            been taken by the team or the model itself to watch for possible cases of unethical treatment. The overisght team could 
+            have analyzed the kinds of profiles that were being selected to see if these were actually fradulent individuals. They most 
+            likely would have noticed that those getting denied were mainly of minority backgrounds and will hopefully either make the 
+            changes themselves or bring up this concern to the proper officials to fix prevent this miscalculation. There could have also
+            been checks within the model itself. For example, there could have been some sort of tracking within the program to count the 
+            percentage of different factors that ended up placing an individual on the frad list. The model could have noticed that out of 
+            the past 1000 profiles, 600 were flagged as "risky" and "fraudulent". The program could then go through the list of fradulent
+            profiles to see if there were similarities in the individuals' backgrounds to hopefully send an alert to the team that something
+            may be off with how the predictive software is working. This would again require that an oversight team was in place to both 
+            add these safeguards to the model so that the software can alert the team when certain similarities accross the "fradulent" 
+            profiles are getting denied and then the team must be present to respond to these alerts and actually analyze the data to see
+            if the model is truly working as the Dutch government hoped it would. 
+            </p>
         </div>
 
         <div id="firstdiv">
